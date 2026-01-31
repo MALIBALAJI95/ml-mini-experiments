@@ -1,0 +1,15 @@
+USERS (user_id, name, email, phone)
+    |
+    | (1 to many)
+    |
+BOOKINGS (booking_id, user_id, listing_id, check_in, check_out)
+    |
+    | (many to 1)
+    |
+LISTINGS (listing_id, host_id, location, price_per_night)
+    |
+    | (many to 1)
+    |
+HOSTS (host_id, name, rating)
+
+BOOKINGS → PAYMENTS (1 to 1)
